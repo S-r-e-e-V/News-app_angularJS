@@ -1,0 +1,12 @@
+Open index.html.
+Open in Edge.
+chrome, firefox, etc.. are blocking (due to CORS policy) access to read component file from system.
+
+AngularJS framework is used.
+
+Compleated task
+
+=> The feed contains image of news.
+=> The headline shown partially with 50 characters with a 'more' button.
+=> The full headline shown on clicking the 'more' button.
+=> Posts can be bookmarked and bookmarked items can be viewed by clicking bookmarke_Icon on navigation bar.

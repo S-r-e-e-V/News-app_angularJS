@@ -1,0 +1,18 @@
+<div class="card-div" ng-repeat="item in info" style="margin-bottom: 20px;">
+    <div class="card">
+        <h6 class="card-title author-name" style="padding-top: 2px;padding-bottom: 3px;">Author : {{item.author}}</h6>
+        <img class="card-img-top card-img" src="{{item.urlToImage}}" alt="Loading..." style="padding: 5px;">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a href=""><img src="icons/heart.png" class="image" width="25dp"></a>
+                <a href=""><img src="icons/comment-icon.png" class="image" width="40dp"></a>
+                <a href=""><img src="icons/send.png" class="image" width="25dp"></a>
+                <a href ng-click="bookmarkTrue(item.id)"><img src="icons/bookmark_icon.png" class="image" width="30dp" style="margin-left: 400px;"></a>
+            </h5>
+            <p class="card-text"> {{item.title + item.description | limitTo: item.leng}}...
+                <a href ng-click="incrementLimit(item.title.length+item.title.length,item.id)" ng-if="!item.more">more</a>
+                <a href ng-click="decrementLimit(item.id)" ng-if="item.more">less</a>
+            </p>
+        </div>
+    </div>
+</div>

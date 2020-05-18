@@ -1,0 +1,20 @@
+.card{
+    height: 700px;
+    width: 615px;
+}
+.card-img{
+    height: 500px;
+}
+.author-name{
+        margin: 0;
+        margin-left: 5px;
+        color: black;
+        font-size: 1.3rem;
+        text-decoration: none;
+}
+.book-mark{
+    margin-right: 0;
+}
+body{
+    background-color:#FAFAFA;
+}
